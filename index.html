@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>АвтоПостер — постеры на металле (УФ‑печать)</title>
+  <meta name="description" content="Постеры на металле 4 мм. УФ‑печать. Дизайн включён. Производство Краснодар. Доставка по РФ бесплатно. Оформление в Telegram @artem_myuu." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="АвтоПостер">
+          <img src="assets/logo/autoposter.svg" alt="АвтоПостер" />
+          <div class="title">
+            <strong>АвтоПостер</strong>
+            <span>металл 4 мм • УФ‑печать • дизайн включён</span>
+          </div>
+        </a>
+
+        <div class="navlinks" aria-label="Навигация">
+          <a href="#catalog">Каталог</a>
+          <a href="#price">Прайс</a>
+          <a href="#examples">Примеры</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#delivery">Доставка</a>
+          <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="actions">
+          <button class="btn icon" id="themeToggle" aria-label="Переключить тему" title="Тема">☾</button>
+          <a class="btn" href="https://t.me/artem_myuu" target="_blank" rel="noreferrer">Telegram</a>
+          <button class="btn cartBtn" id="openCart" aria-label="Открыть корзину">
+            🛒
+            <span class="cartCount" id="cartCount" style="display:none;">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="heroGrid">
+          <div class="heroCard" data-animate>
+            <div class="kicker">
+              <span class="badge">Производство: Краснодар</span>
+              <span class="badge">РФ: доставка бесплатно</span>
+              <span class="badge">Беларусь: с доплатой</span>
+            </div>
+
+            <h1 class="h1">Постер твоей машины —<br/>с характером и вкусом</h1>
+            <p class="lead">
+              Печатаем <b>на металле 4 мм</b> с помощью <b>УФ‑принтера</b>. Дизайн включён: после оформления мы уточним пожелания,
+              подготовим макет и согласуем его в Telegram.
+            </p>
+
+            <div class="heroCtas">
+              <button class="btn primary" id="goCatalog">Выбрать размер</button>
+              <button class="btn" id="goExamples">Посмотреть примеры</button>
+            </div>
+
+            <div class="heroMeta">
+              <div class="metaItem">
+                <strong>Минимальный заказ</strong>
+                <span>от 9 404 ₽</span>
+              </div>
+              <div class="metaItem">
+                <strong>Материал</strong>
+                <span>металл, толщина 4 мм</span>
+              </div>
+              <div class="metaItem">
+                <strong>Печать</strong>
+                <span>УФ‑печать: ярко и стойко</span>
+              </div>
+              <div class="metaItem">
+                <strong>Оформление</strong>
+                <span>в Telegram @artem_myuu</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="previewCard" data-animate>
+            <div class="previewTop">
+              <div>
+                <div class="h2" style="font-size:18px; margin:0;">Примеры работ</div>
+                <div class="mini">Нажми на фото ниже — откроется в новой вкладке</div>
+              </div>
+              <span class="badge">Авто • Мото • Авиа</span>
+            </div>
+            <div class="previewGrid">
+              <div class="previewTile"><img src="assets/examples/000F9703-FCD6-41BB-BDE6-DC0FDB35402F.jpeg" alt="Пример работы"></div>
+<div class="previewTile"><img src="assets/examples/443BFEF6-FC0D-4D03-9CCB-2F75403570DB.jpeg" alt="Пример работы"></div>
+<div class="previewTile"><img src="assets/examples/5A2827B2-02BD-4A03-9998-77B66E53A343.jpeg" alt="Пример работы"></div>
+<div class="previewTile"><img src="assets/examples/60F8F3C9-FC98-4B69-BBE4-0F4F425BFE1F.jpeg" alt="Пример работы"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight" id="catalog">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Каталог</h2>
+            <p class="sub">Выбираешь размер → добавляешь в корзину → оформляешь в Telegram. Дальше мы берём всё на себя.</p>
+          </div>
+          <span class="badge">Дизайн включён</span>
+        </div>
+
+        <div class="grid cols2">
+          <div class="card product" data-animate>
+            <div class="productThumb">
+              <img id="productThumb" src="" alt="АвтоПостер" />
+            </div>
+
+            <div class="productTitle">
+              <div>
+                <h3 id="productTitle"></h3>
+                <div class="note" id="productSubtitle"></div>
+              </div>
+              <div class="priceFrom" id="priceFrom"></div>
+            </div>
+
+            <div class="note" id="productDesc"></div>
+
+            <div class="selectRow">
+              <label for="sizeSelect">Размер:</label>
+              <select id="sizeSelect" aria-label="Выбор размера"></select>
+              <button class="btn primary" id="addBtn">В корзину</button>
+            </div>
+
+            <div class="note">
+              Можно убрать номер, заменить фон, добавить характеристики/надписи, сделать строгий минимализм или “как в рекламе”.
+              Всё согласуем перед печатью.
+            </div>
+          </div>
+
+          <div class="card" data-animate>
+            <h3 style="margin:0 0 10px;">Как проходит заказ</h3>
+            <div class="note">
+              <ol style="margin:10px 0 0; padding-left:18px; line-height:1.75;">
+                <li><b>Добавь размер</b> в корзину.</li>
+                <li>Нажми <b>«Оформить в Telegram»</b> — чат откроется с готовым текстом заказа.</li>
+                <li>В Telegram пришли фото/референсы и пожелания по стилю.</li>
+                <li>Мы <b>делаем макет</b>, согласуем, печатаем и отправляем.</li>
+              </ol>
+              <hr class="sep">
+              <div class="pills">
+                <span class="badge">📦 Упаковка: надёжная</span>
+                <span class="badge">🎨 Макет: согласование</span>
+                <span class="badge">🚚 РФ: бесплатно</span>
+              </div>
+            </div>
+
+            <hr class="sep">
+
+            <h3 style="margin:0 0 8px;">Где смотрится лучше всего</h3>
+            <div class="note">
+              Гараж / рабочее место / гостиная / студия / автосервис / офис. Металл даёт эффект “дороже” и глубину, которую сложно получить на бумаге.
+            </div>
+
+            <hr class="sep">
+
+            <a class="btn" href="https://t.me/artem_myuu" target="_blank" rel="noreferrer">Задать вопрос в Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="price">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Прайс</h2>
+            <p class="sub">Постер на металле 4 мм. УФ‑печать. Дизайн включён.</p>
+          </div>
+          <span class="badge">Минимальный заказ: 9 404 ₽</span>
+        </div>
+
+        <div class="grid cols2">
+          <div class="card" data-animate>
+            <table class="table" aria-label="Прайс АвтоПостер">
+              <thead>
+                <tr>
+                  <th>Формат</th>
+                  <th>Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>60×80</strong></td><td>9 404 ₽</td></tr>
+<tr><td><strong>70×100</strong></td><td>12 110 ₽</td></tr>
+<tr><td><strong>80×120</strong></td><td>15 308 ₽</td></tr>
+<tr><td><strong>120×100</strong></td><td>18 260 ₽</td></tr>
+<tr><td><strong>100×150</strong></td><td>21 950 ₽</td></tr>
+              </tbody>
+            </table>
+            <div class="note" style="margin-top:12px;">
+              <b>Доставка по РФ — бесплатно.</b> В Республику Беларусь — доставка за дополнительную плату (по адресу).
+            </div>
+          </div>
+
+          <div class="card" data-animate>
+            <h3 style="margin:0 0 8px;">В стоимость входит</h3>
+            <div class="note">
+              <ul style="margin:10px 0 0; padding-left:18px; line-height:1.75;">
+                <li>Разработка дизайна под твой стиль (авто/мото/авиа/портрет).</li>
+                <li>Согласование макета в Telegram.</li>
+                <li>УФ‑печать на металле толщиной 4 мм.</li>
+                <li>Упаковка и подготовка к отправке.</li>
+              </ul>
+            </div>
+            <hr class="sep">
+            <div class="note">
+              Не знаешь, какой стиль выбрать? Напиши, что за машина и настроение (строго/спортивно/ретро/минимализм) — предложим варианты.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="examples">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Примеры работ</h2>
+            <p class="sub">Адаптивная галерея: на ПК — “плитка”, на телефоне — крупные карточки.</p>
+          </div>
+          <span class="badge">Открываются в новой вкладке</span>
+        </div>
+
+        <div class="gallery" data-animate>
+          <a class="gItem span8" href="assets/examples/000F9703-FCD6-41BB-BDE6-DC0FDB35402F.jpeg" target="_blank" rel="noreferrer" aria-label="Открыть пример работы">
+  <img src="assets/examples/000F9703-FCD6-41BB-BDE6-DC0FDB35402F.jpeg" alt="Пример постера">
+  <div class="gLabel">Пример #1</div>
+</a>
+<a class="gItem span4" href="assets/examples/443BFEF6-FC0D-4D03-9CCB-2F75403570DB.jpeg" target="_blank" rel="noreferrer" aria-label="Открыть пример работы">
+  <img src="assets/examples/443BFEF6-FC0D-4D03-9CCB-2F75403570DB.jpeg" alt="Пример постера">
+  <div class="gLabel">Пример #2</div>
+</a>
+<a class="gItem span4" href="assets/examples/5A2827B2-02BD-4A03-9998-77B66E53A343.jpeg" target="_blank" rel="noreferrer" aria-label="Открыть пример работы">
+  <img src="assets/examples/5A2827B2-02BD-4A03-9998-77B66E53A343.jpeg" alt="Пример постера">
+  <div class="gLabel">Пример #3</div>
+</a>
+<a class="gItem span4" href="assets/examples/60F8F3C9-FC98-4B69-BBE4-0F4F425BFE1F.jpeg" target="_blank" rel="noreferrer" aria-label="Открыть пример работы">
+  <img src="assets/examples/60F8F3C9-FC98-4B69-BBE4-0F4F425BFE1F.jpeg" alt="Пример постера">
+  <div class="gLabel">Пример #4</div>
+</a>
+<a class="gItem span6" href="assets/examples/61172187-24DB-4B08-84A6-8BD3E0CD5D3A.jpeg" target="_blank" rel="noreferrer" aria-label="Открыть пример работы">
+  <img src="assets/examples/61172187-24DB-4B08-84A6-8BD3E0CD5D3A.jpeg" alt="Пример постера">
+  <div class="gLabel">Пример #5</div>
+</a>
+<a class="gItem span6" href="assets/examples/72E14B19-0C7B-4C87-B989-884C897DAE47.jpeg" target="_blank" rel="noreferrer" aria-label="Открыть пример работы">
+  <img src="assets/examples/72E14B19-0C7B-4C87-B989-884C897DAE47.jpeg" alt="Пример постера">
+  <div class="gLabel">Пример #6</div>
+</a>
+<a class="gItem span4" href="assets/examples/7407C5A6-F10C-4604-AD42-1D4A262BC2C8.jpeg" target="_blank" rel="noreferrer" aria-label="Открыть пример работы">
+  <img src="assets/examples/7407C5A6-F10C-4604-AD42-1D4A262BC2C8.jpeg" alt="Пример постера">
+  <div class="gLabel">Пример #7</div>
+</a>
+<a class="gItem span8" href="assets/examples/8B00CE38-BAE3-4CF4-92DC-EE09B6AFF04E.jpeg" target="_blank" rel="noreferrer" aria-label="Открыть пример работы">
+  <img src="assets/examples/8B00CE38-BAE3-4CF4-92DC-EE09B6AFF04E.jpeg" alt="Пример постера">
+  <div class="gLabel">Пример #8</div>
+</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Отзывы клиентов</h2>
+            <p class="sub">Живые эмоции — лучший показатель качества.</p>
+          </div>
+          <span class="badge">★★★★★</span>
+        </div>
+
+        <div class="grid cols3">
+          
+<div class="card review" data-animate>
+  <div class="who"><div class="avatar"></div><div><b>Алексей, Ростов</b><div class="small">клиент АвтоПостер</div></div></div>
+  <p>Выглядит как кадр из рекламы — только это моя машина. Детали читаются идеально.</p>
+</div>
+
+
+<div class="card review" data-animate>
+  <div class="who"><div class="avatar"></div><div><b>Виктория, Краснодар</b><div class="small">клиент АвтоПостер</div></div></div>
+  <p>Качество печати топ. Металл тяжёлый, ровный, упаковка надёжная.</p>
+</div>
+
+
+<div class="card review" data-animate>
+  <div class="who"><div class="avatar"></div><div><b>Илья, Москва</b><div class="small">клиент АвтоПостер</div></div></div>
+  <p>Согласовали макет быстро в Telegram. Приехало без косяков, всё чётко.</p>
+</div>
+
+
+<div class="card review" data-animate>
+  <div class="who"><div class="avatar"></div><div><b>Даниил, Екатеринбург</b><div class="small">клиент АвтоПостер</div></div></div>
+  <p>70×100 вживую смотрится дороже, чем на фото. Комната сразу стала “премиум”.</p>
+</div>
+
+
+<div class="card review" data-animate>
+  <div class="who"><div class="avatar"></div><div><b>Никита, Минск</b><div class="small">клиент АвтоПостер</div></div></div>
+  <p>Отправили в Беларусь, доплату посчитали по адресу. Всё доехало целым.</p>
+</div>
+
+
+<div class="card review" data-animate>
+  <div class="who"><div class="avatar"></div><div><b>Мария, Казань</b><div class="small">клиент АвтоПостер</div></div></div>
+  <p>Подарок удался: эмоции — огонь. Теперь хотим второй в другом стиле.</p>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="delivery">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Доставка</h2>
+            <p class="sub">Производство — Краснодар. Отправка по РФ — бесплатно. Беларусь — доплата.</p>
+          </div>
+          <span class="badge">🚚</span>
+        </div>
+
+        <div class="grid cols2">
+          <div class="card" data-animate>
+            <h3 style="margin:0 0 8px;">По РФ — бесплатно</h3>
+            <div class="note">
+              Отправим в любой регион страны. Упаковка жёсткая — металл доезжает целым и ровным.
+            </div>
+            <hr class="sep">
+            <h3 style="margin:0 0 8px;">В Беларусь — с доплатой</h3>
+            <div class="note">
+              Доставка в Республику Беларусь рассчитывается по адресу. Сразу скажем стоимость перед отправкой.
+            </div>
+          </div>
+
+          <div class="card" data-animate>
+            <h3 style="margin:0 0 10px;">Оформление</h3>
+            <div class="note">Оформление идёт через Telegram — так быстрее согласовать дизайн и детали перед печатью.</div>
+            <hr class="sep">
+            <div class="note">
+              <b>Чат:</b> <a href="https://t.me/artem_myuu" target="_blank" rel="noreferrer" style="text-decoration:underline;">@artem_myuu</a>
+            </div>
+            <hr class="sep">
+            <div class="note">
+              Нажми “Корзина” → “Оформить в Telegram” — сообщение сформируется автоматически.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">FAQ</h2>
+            <p class="sub">Коротко отвечаем на частые вопросы.</p>
+          </div>
+        </div>
+
+        <div class="grid cols2">
+          
+<div class="card" data-animate>
+  <div class="row"><b>Какие фото подойдут для постера?</b></div>
+  <div class="note" style="margin-top:8px;">Лучше всего — чёткое фото при хорошем освещении. Если сомневаешься — просто скинь, подскажем.</div>
+</div>
+
+
+<div class="card" data-animate>
+  <div class="row"><b>Дизайн действительно включён в цену?</b></div>
+  <div class="note" style="margin-top:8px;">Да. Мы делаем дизайн под твой стиль и отправляем макет на согласование в Telegram.</div>
+</div>
+
+
+<div class="card" data-animate>
+  <div class="row"><b>Сколько занимает изготовление?</b></div>
+  <div class="note" style="margin-top:8px;">Обычно 1–3 дня на производство + доставка. Срочные заказы обсуждаем отдельно.</div>
+</div>
+
+
+<div class="card" data-animate>
+  <div class="row"><b>Доставка бесплатная?</b></div>
+  <div class="note" style="margin-top:8px;">По РФ — бесплатно. В Республику Беларусь доставка идёт за дополнительную плату.</div>
+</div>
+
+
+<div class="card" data-animate>
+  <div class="row"><b>Можно убрать номер / изменить фон / добавить характеристики?</b></div>
+  <div class="note" style="margin-top:8px;">Да. Убираем номера, меняем фон, добавляем текст и характеристики — всё согласуем перед печатью.</div>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="footerGrid">
+          <div data-animate>
+            <div class="row" style="align-items:flex-start;">
+              <div style="display:flex; gap:12px; align-items:center;">
+                <img src="assets/logo/autoposter.svg" alt="АвтоПостер" style="width:44px;height:44px;">
+                <div>
+                  <div style="font-weight:900; letter-spacing:.2px;">АвтоПостер</div>
+                  <div class="small">Постеры на металле • УФ‑печать • металл 4 мм</div>
+                </div>
+              </div>
+            </div>
+            <p class="small" style="margin-top:12px;">
+              Производство: Краснодар. Доставка по РФ — бесплатно. В Беларусь — доплата.
+              Оформление и согласование дизайна — через Telegram.
+            </p>
+            <div class="pills" style="margin-top:10px;">
+              <span class="badge">📦 Минимальный заказ: 9 404 ₽</span>
+              <span class="badge">🚚 РФ: бесплатно</span>
+              <span class="badge">💬 Telegram: @artem_myuu</span>
+            </div>
+          </div>
+
+          <div class="card" style="padding:16px;" data-animate>
+            <div style="font-weight:900;">Быстрый контакт</div>
+            <p class="small" style="margin:8px 0 12px;">Напиши “Хочу постер” и пришли фото — подберём стиль и подготовим макет.</p>
+            <a class="btn primary" href="https://t.me/artem_myuu" target="_blank" rel="noreferrer">Открыть Telegram</a>
+            <div class="small" style="margin-top:10px;">© 2026 АвтоПостер</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div class="drawerOverlay" id="drawerOverlay" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" aria-label="Корзина">
+    <div class="drawerHeader">
+      <h3>Корзина</h3>
+      <button class="btn" id="drawerClose">Закрыть</button>
+    </div>
+
+    <div class="drawerBody">
+      <div class="note" style="margin-bottom:10px;">
+        Оформление идёт через Telegram — чтобы согласовать дизайн перед печатью.
+      </div>
+
+      <div class="card" style="padding:14px; margin-bottom:12px;">
+        <div class="selectRow" style="justify-content:space-between;">
+          <label for="deliverySelect">Доставка:</label>
+          <select id="deliverySelect">
+            <option value="rf">РФ — бесплатно</option>
+            <option value="by">Беларусь — с доплатой</option>
+          </select>
+        </div>
+        <div style="height:10px;"></div>
+        <label class="note" for="cityInput" style="display:block; margin-bottom:6px;">Город / адрес (по желанию)</label>
+        <input id="cityInput" type="text" placeholder="Например: Краснодар / Москва / Минск" />
+        <div style="height:10px;"></div>
+        <label class="note" for="commentInput" style="display:block; margin-bottom:6px;">Пожелания по стилю (по желанию)</label>
+        <textarea id="commentInput" placeholder="Например: минимализм, ретро, “как в рекламе”, без номера, другой фон..."></textarea>
+      </div>
+
+      <div id="minWarn" class="note" style="display:none; padding:12px; border:1px dashed var(--line); border-radius:14px; background: color-mix(in srgb, var(--card2) 80%, transparent);"></div>
+
+      <div id="cartList"></div>
+    </div>
+
+    <div class="drawerFooter">
+      <div class="totalRow">
+        <span>Итого</span>
+        <strong id="cartTotal">0 ₽</strong>
+      </div>
+      <div class="row">
+        <button class="btn" id="clearBtn">Очистить</button>
+        <button class="btn primary" id="checkoutBtn">Оформить в Telegram</button>
+      </div>
+      <div class="small" style="margin-top:10px;">
+        После нажатия откроется Telegram <b>@artem_myuu</b> с готовым текстом заказа.
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
