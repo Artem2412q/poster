@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="56" y="56" width="400" height="400" rx="96" stroke="currentColor" stroke-width="14"/>
+  <path d="M162 350V168c0-20.4 16.6-37 37-37h49c56.5 0 94 33.5 94 82.2S304.5 296 248 296h-49v54h-37Zm37-90h47c34 0 58-18.5 58-46.8 0-28.1-24-45.9-58-45.9h-47v92.7Z" fill="currentColor"/>
+  <path d="M354 350V168h37v182h-37Z" fill="currentColor"/>
+  <path d="M354 238h96v34h-96v-34Z" fill="currentColor"/>
+</svg>
